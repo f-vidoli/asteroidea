@@ -1,0 +1,7 @@
+{
+  "active_launcher": "launcher.js",
+  "active_plugin_manager": "manager.js",
+  "fallback_launcher": "launcher.js",
+  "safe_mode": true,
+  "plugins_dir": "plugins"
+}

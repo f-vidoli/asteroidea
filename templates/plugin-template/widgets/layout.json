@@ -1,0 +1,18 @@
+{
+  "name": "my_plugin.card",
+  "root": {
+    "type": "BoxLayout",
+    "props": { "orientation": "vertical", "padding": 12, "spacing": 8 },
+    "children": [
+      { "type": "Label", "props": { "text": "Hello from my_plugin" } },
+      { "type": "Label", "props": { "text": "value: ${payload.value}" } },
+      {
+        "type": "Button",
+        "props": { "text": "Store" },
+        "on_press": [
+          { "action": "storage.set", "tier": "private", "key": "pressedAt", "value": "${now}" }
+        ]
+      }
+    ]
+  }
+}
