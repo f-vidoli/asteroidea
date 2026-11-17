@@ -1,0 +1,34 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Buildozer / packaging
+.buildozer/
+bin/
+*.apk
+*.aab
+
+# Virtual envs
+.venv/
+venv/
+ENV/
+
+# Local agent/editor state
+.opencode/
+
+# OS/editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Runtime plugin state/caches
+plugins/cache/*
+!plugins/cache/.gitkeep
+plugins/settings.json
+plugins/memory/*.json
+
+# Logs
+*.log

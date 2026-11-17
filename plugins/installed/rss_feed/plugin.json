@@ -1,0 +1,39 @@
+{
+  "id": "rss_feed",
+  "name": "RSS Feed",
+  "version": "0.1.0",
+  "description": "Fetches and displays items from an RSS/Atom feed (custom feed + custom settings widget).",
+  "entrypoints": {
+    "widgets": "widgets",
+    "libraries": "libraries",
+    "fetchers": "fetchers",
+    "daemons": "daemons"
+  },
+  "settings_widget": "RssSettingsWidget",
+  "settings": [
+    {
+      "key": "enabled",
+      "type": "bool",
+      "label": "Enable RSS feed",
+      "default": true
+    },
+    {
+      "key": "feed_url",
+      "type": "string",
+      "label": "Feed URL",
+      "default": "https://hnrss.org/frontpage"
+    },
+    {
+      "key": "max_items",
+      "type": "int",
+      "label": "Max items",
+      "default": 5
+    },
+    {
+      "key": "refresh_minutes",
+      "type": "int",
+      "label": "Refresh interval (minutes)",
+      "default": 15
+    }
+  ]
+}

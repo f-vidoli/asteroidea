@@ -1,0 +1,44 @@
+{
+  "id": "weather_home",
+  "name": "Weather (Next 5h)",
+  "version": "0.1.0",
+  "description": "Shows weather for the next 5 hours on the Home screen.",
+  "entrypoints": {
+    "widgets": "widgets",
+    "libraries": "libraries",
+    "fetchers": "fetchers",
+    "daemons": "daemons"
+  },
+  "settings": [
+    {
+      "key": "enabled",
+      "type": "bool",
+      "label": "Enable weather widget",
+      "default": true
+    },
+    {
+      "key": "latitude",
+      "type": "float",
+      "label": "Latitude",
+      "default": 41.9028
+    },
+    {
+      "key": "longitude",
+      "type": "float",
+      "label": "Longitude",
+      "default": 12.4964
+    },
+    {
+      "key": "city_label",
+      "type": "string",
+      "label": "Location label",
+      "default": "Rome"
+    },
+    {
+      "key": "refresh_minutes",
+      "type": "int",
+      "label": "Refresh interval (minutes)",
+      "default": 30
+    }
+  ]
+}
